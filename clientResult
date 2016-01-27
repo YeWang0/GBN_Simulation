@@ -1,0 +1,180 @@
+Script started on December  2, 2015 07:52:38 PM EST
+tcsh: using dumb terminal settings.
+orioles1[31] [~/CPEG651/project2/submission/]> ls -l
+total 71
+-rw-r-----   1 wangye   wangye     13828 Dec  2 19:39 client_GBN.c
+-rw-r-----   1 wangye   wangye       144 Dec  2 19:55 clientResult
+-rwxr-x---   1 wangye   wangye     14028 Dec  2 19:54 server_GBN
+-rw-r-----   1 wangye   wangye     10414 Dec  2 19:39 server_GBN.c
+-rw-r-----   1 wangye   wangye      1235 Dec  2 19:54 serverResult
+-rw-r-----   1 wangye   wangye      1525 Dec  2 19:48 test1.txt
+-rw-r-----   1 wangye   wangye      8043 Dec  2 16:33 test2.txt
+orioles1[32] [~/CPEG651/project2/submission/]> gcc -lxnet client_GBN.c -o client
+_GBN.c    N.c   
+orioles1[33] [~/CPEG651/project2/submission/]> ls -l
+total 72
+-rwxr-x---   1 wangye   wangye     16848 Dec  2 19:55 client_GBN
+-rw-r-----   1 wangye   wangye     13828 Dec  2 19:39 client_GBN.c
+-rw-r-----   1 wangye   wangye       790 Dec  2 19:52 clientResult
+-rwxr-x---   1 wangye   wangye     14028 Dec  2 19:54 server_GBN
+-rw-r-----   1 wangye   wangye     10414 Dec  2 19:39 server_GBN.c
+-rw-r-----   1 wangye   wangye      1235 Dec  2 19:54 serverResult
+-rw-r-----   1 wangye   wangye      1525 Dec  2 19:48 test1.txt
+-rw-r-----   1 wangye   wangye      8043 Dec  2 16:33 test2.txt
+orioles1[34] [~/CPEG651/project2/submission/]> ./client_GBN 
+Enter hostname of server: 127.0.0.1
+Please input a number between 1 and 8 as the Window size:
+1
+Please input a number between 1 and 10 as the Timeout:
+5
+Please input the name of input file:
+test1.txt
+Packet 0 transmitted with 15 data bytes
+
+ACK 0 received
+Packet 1 transmitted with 31 data bytes
+
+ACK 1 received
+Packet 2 transmitted with 13 data bytes
+
+ACK 2 received
+Packet 3 transmitted with 1 data bytes
+
+ACK 3 received
+Packet 4 transmitted with 16 data bytes
+
+ACK 4 received
+Packet 5 transmitted with 10 data bytes
+
+ACK 5 received
+Packet 6 transmitted with 63 data bytes
+
+ACK 6 received
+Packet 7 transmitted with 59 data bytes
+
+ACK 7 received
+Packet 8 transmitted with 28 data bytes
+
+ACK 8 received
+Packet 9 transmitted with 1 data bytes
+
+ACK 9 received
+Packet 10 transmitted with 10 data bytes
+
+ACK 10 received
+Packet 11 transmitted with 1 data bytes
+
+ACK 11 received
+Packet 12 transmitted with 79 data bytes
+
+ACK 12 received
+Packet 13 transmitted with 1 data bytes
+
+ACK 13 received
+Packet 14 transmitted with 77 data bytes
+
+ACK 14 received
+Packet 15 transmitted with 41 data bytes
+
+ACK 15 received
+Packet 0 transmitted with 78 data bytes
+
+ACK 0 received
+Packet 1 transmitted with 78 data bytes
+
+ACK 1 received
+Packet 2 transmitted with 36 data bytes
+
+ACK 2 received
+Packet 3 transmitted with 79 data bytes
+
+ACK 3 received
+Packet 4 transmitted with 50 data bytes
+
+ACK 4 received
+Packet 5 transmitted with 54 data bytes
+
+ACK 5 received
+Packet 6 transmitted with 23 data bytes
+
+ACK 6 received
+Packet 7 transmitted with 1 data bytes
+
+ACK 7 received
+Packet 8 transmitted with 1 data bytes
+
+ACK 8 received
+Packet 9 transmitted with 17 data bytes
+
+ACK 9 received
+Packet 10 transmitted with 61 data bytes
+
+ACK 10 received
+Packet 11 transmitted with 61 data bytes
+
+ACK 11 received
+Packet 12 transmitted with 61 data bytes
+
+ACK 12 received
+Packet 13 transmitted with 61 data bytes
+
+ACK 13 received
+Packet 14 transmitted with 61 data bytes
+
+ACK 14 received
+Packet 15 transmitted with 61 data bytes
+
+ACK 15 received
+Packet 0 transmitted with 61 data bytes
+
+ACK 0 received
+Packet 1 transmitted with 61 data bytes
+
+ACK 1 received
+Packet 2 transmitted with 15 data bytes
+
+ACK 2 received
+Packet 3 transmitted with 1 data bytes
+
+ACK 3 received
+Packet 4 transmitted with 38 data bytes
+
+ACK 4 received
+Packet 5 transmitted with 29 data bytes
+
+ACK 5 received
+Packet 6 transmitted with 45 data bytes
+
+ACK 6 received
+Packet 7 transmitted with 45 data bytes
+
+ACK 7 received
+Packet 8 transmitted with 1 data bytes
+
+ACK 8 received
+
+End of Transmission Packet with sequence number 9 transmitted with 0 data bytes!
+Transmission is finished! 
+
+Number of data packets transmitted (initial transmission only): 41
+Total number of data bytes transmitted (this should be the sum of the count fields of all transmitted packets when transmitted for the first time only): 1525
+Total number of retransmissions: 0
+Total number of data packets transmitted (initial transmissions plus retransmissions): 41
+Number of ACKs received: 41
+Count of how many times timeout expired: 0
+orioles1[35] [~/CPEG651/project2/submission/]> ls -l
+total 95
+-rwxr-x---   1 wangye   wangye     16848 Dec  2 19:55 client_GBN
+-rw-r-----   1 wangye   wangye     13828 Dec  2 19:39 client_GBN.c
+-rw-r-----   1 wangye   wangye      4635 Dec  2 19:57 clientResult
+-rw-r-----   1 wangye   wangye      1525 Dec  2 19:57 output.txt
+-rwxr-x---   1 wangye   wangye     14028 Dec  2 19:54 server_GBN
+-rw-r-----   1 wangye   wangye     10414 Dec  2 19:39 server_GBN.c
+-rw-r-----   1 wangye   wangye      6025 Dec  2 19:57 serverResult
+-rw-r-----   1 wangye   wangye      1525 Dec  2 19:48 test1.txt
+-rw-r-----   1 wangye   wangye      8043 Dec  2 16:33 test2.txt
+orioles1[36] [~/CPEG651/project2/submission/]> diff test1.txt output.txt 
+orioles1[37] [~/CPEG651/project2/submission/]> exit
+exit
+
+script done on December  2, 2015 07:58:42 PM EST

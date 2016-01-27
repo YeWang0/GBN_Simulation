@@ -1,0 +1,225 @@
+Script started on December  2, 2015 07:54:27 PM EST
+tcsh: using dumb terminal settings.
+orioles1[31] [~/CPEG651/project2/submission/]> ls -l
+total 50
+-rw-r-----   1 wangye   wangye     13828 Dec  2 19:39 client_GBN.c
+-rw-r-----   1 wangye   wangye       136 Dec  2 19:52 clientResult
+-rw-r-----   1 wangye   wangye     10414 Dec  2 19:39 server_GBN.c
+-rw-r-----   1 wangye   wangye       144 Dec  2 19:54 serverResult
+-rw-r-----   1 wangye   wangye      1525 Dec  2 19:48 test1.txt
+-rw-r-----   1 wangye   wangye      8043 Dec  2 16:33 test2.txt
+orioles1[32] [~/CPEG651/project2/submission/]> gcc -lxnet server_GBN.c -o server
+_GBN.c   
+orioles1[33] [~/CPEG651/project2/submission/]> ls -l
+total 53
+-rw-r-----   1 wangye   wangye     13828 Dec  2 19:39 client_GBN.c
+-rw-r-----   1 wangye   wangye       136 Dec  2 19:52 clientResult
+-rwxr-x---   1 wangye   wangye     14028 Dec  2 19:54 server_GBN
+-rw-r-----   1 wangye   wangye     10414 Dec  2 19:39 server_GBN.c
+-rw-r-----   1 wangye   wangye       710 Dec  2 19:54 serverResult
+-rw-r-----   1 wangye   wangye      1525 Dec  2 19:48 test1.txt
+-rw-r-----   1 wangye   wangye      8043 Dec  2 16:33 test2.txt
+orioles1[34] [~/CPEG651/project2/submission/]> ./server_GBN 
+Please input a number between 1 and 8 as the Window size:
+1
+Please input a number between 0 and 1 as the Packet loss rate:
+0
+Please input a number  to indicate packet delay:
+ 0. No delay 1. Delay
+0
+Please input a number between 0 and 1 as the ACK loss rate:
+0
+Please input the name of output file:
+output.txt
+Waiting for incoming messages on port 12345
+
+Packet 0 received with 15 data bytes
+Packet 0 delivered to user
+ACK 0 transmitted
+
+Packet 1 received with 31 data bytes
+Packet 1 delivered to user
+ACK 1 transmitted
+
+Packet 2 received with 13 data bytes
+Packet 2 delivered to user
+ACK 2 transmitted
+
+Packet 3 received with 1 data bytes
+Packet 3 delivered to user
+ACK 3 transmitted
+
+Packet 4 received with 16 data bytes
+Packet 4 delivered to user
+ACK 4 transmitted
+
+Packet 5 received with 10 data bytes
+Packet 5 delivered to user
+ACK 5 transmitted
+
+Packet 6 received with 63 data bytes
+Packet 6 delivered to user
+ACK 6 transmitted
+
+Packet 7 received with 59 data bytes
+Packet 7 delivered to user
+ACK 7 transmitted
+
+Packet 8 received with 28 data bytes
+Packet 8 delivered to user
+ACK 8 transmitted
+
+Packet 9 received with 1 data bytes
+Packet 9 delivered to user
+ACK 9 transmitted
+
+Packet 10 received with 10 data bytes
+Packet 10 delivered to user
+ACK 10 transmitted
+
+Packet 11 received with 1 data bytes
+Packet 11 delivered to user
+ACK 11 transmitted
+
+Packet 12 received with 79 data bytes
+Packet 12 delivered to user
+ACK 12 transmitted
+
+Packet 13 received with 1 data bytes
+Packet 13 delivered to user
+ACK 13 transmitted
+
+Packet 14 received with 77 data bytes
+Packet 14 delivered to user
+ACK 14 transmitted
+
+Packet 15 received with 41 data bytes
+Packet 15 delivered to user
+ACK 15 transmitted
+
+Packet 0 received with 78 data bytes
+Packet 0 delivered to user
+ACK 0 transmitted
+
+Packet 1 received with 78 data bytes
+Packet 1 delivered to user
+ACK 1 transmitted
+
+Packet 2 received with 36 data bytes
+Packet 2 delivered to user
+ACK 2 transmitted
+
+Packet 3 received with 79 data bytes
+Packet 3 delivered to user
+ACK 3 transmitted
+
+Packet 4 received with 50 data bytes
+Packet 4 delivered to user
+ACK 4 transmitted
+
+Packet 5 received with 54 data bytes
+Packet 5 delivered to user
+ACK 5 transmitted
+
+Packet 6 received with 23 data bytes
+Packet 6 delivered to user
+ACK 6 transmitted
+
+Packet 7 received with 1 data bytes
+Packet 7 delivered to user
+ACK 7 transmitted
+
+Packet 8 received with 1 data bytes
+Packet 8 delivered to user
+ACK 8 transmitted
+
+Packet 9 received with 17 data bytes
+Packet 9 delivered to user
+ACK 9 transmitted
+
+Packet 10 received with 61 data bytes
+Packet 10 delivered to user
+ACK 10 transmitted
+
+Packet 11 received with 61 data bytes
+Packet 11 delivered to user
+ACK 11 transmitted
+
+Packet 12 received with 61 data bytes
+Packet 12 delivered to user
+ACK 12 transmitted
+
+Packet 13 received with 61 data bytes
+Packet 13 delivered to user
+ACK 13 transmitted
+
+Packet 14 received with 61 data bytes
+Packet 14 delivered to user
+ACK 14 transmitted
+
+Packet 15 received with 61 data bytes
+Packet 15 delivered to user
+ACK 15 transmitted
+
+Packet 0 received with 61 data bytes
+Packet 0 delivered to user
+ACK 0 transmitted
+
+Packet 1 received with 61 data bytes
+Packet 1 delivered to user
+ACK 1 transmitted
+
+Packet 2 received with 15 data bytes
+Packet 2 delivered to user
+ACK 2 transmitted
+
+Packet 3 received with 1 data bytes
+Packet 3 delivered to user
+ACK 3 transmitted
+
+Packet 4 received with 38 data bytes
+Packet 4 delivered to user
+ACK 4 transmitted
+
+Packet 5 received with 29 data bytes
+Packet 5 delivered to user
+ACK 5 transmitted
+
+Packet 6 received with 45 data bytes
+Packet 6 delivered to user
+ACK 6 transmitted
+
+Packet 7 received with 45 data bytes
+Packet 7 delivered to user
+ACK 7 transmitted
+
+Packet 8 received with 1 data bytes
+Packet 8 delivered to user
+ACK 8 transmitted
+
+End of Transmission Packet with sequence number 9 received with 0 data bytes
+
+Number of data packets received successfully (without loss and not including duplicates) : 41
+Total number of data bytes received which are delivered to user (this should be the sum of the count fields of all packets received successfully without loss and without duplicates) : 1525
+Total number of duplicate data packets received (without loss) : 0
+Number of data packets received but dropped due to loss : 0
+Total number of data packets received (including those that were successful, those lost, and duplicates) : 41
+Number of ACKs transmitted without loss : 41
+Number of ACKs generated but dropped due to loss : 0
+Total number of ACKs generated (with and without loss) :41
+orioles1[35] [~/CPEG651/project2/submission/]> ls -l
+total 99
+-rwxr-x---   1 wangye   wangye     16848 Dec  2 19:55 client_GBN
+-rw-r-----   1 wangye   wangye     13828 Dec  2 19:39 client_GBN.c
+-rw-r-----   1 wangye   wangye      5292 Dec  2 19:57 clientResult
+-rw-r-----   1 wangye   wangye      1525 Dec  2 19:57 output.txt
+-rwxr-x---   1 wangye   wangye     14028 Dec  2 19:54 server_GBN
+-rw-r-----   1 wangye   wangye     10414 Dec  2 19:39 server_GBN.c
+-rw-r-----   1 wangye   wangye      6033 Dec  2 19:58 serverResult
+-rw-r-----   1 wangye   wangye      1525 Dec  2 19:48 test1.txt
+-rw-r-----   1 wangye   wangye      8043 Dec  2 16:33 test2.txt
+orioles1[36] [~/CPEG651/project2/submission/]> diff test1.txt output.txt 
+orioles1[37] [~/CPEG651/project2/submission/]> exit
+exit
+
+script done on December  2, 2015 07:58:39 PM EST
